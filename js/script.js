@@ -8,7 +8,6 @@ async function getAPI() {
 
     let catalogSize = Object.keys(obj).length;
     const catalogArray = [];
-
     for (let i = 0; i < catalogSize; i++) {
       const content = {
         name: obj[i].name,

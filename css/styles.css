@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Gabarito:wght@400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+}
+
+:root {
+    --strong-orange: #FF9C28;
+    --light-orange: #FFAE4E;
+    --lightier-orange: #FFFAF3;
+    --lightest-orange: #FFFBF9;
+    
+    --simple-white: #FFF;
+
+    --lighter-gray: #F5F5F5;
+    --middle-gray: #404040;
+    --mid-gray: #494949;
+    --dark-gray: #252525;
+    --darker-gray: #1C1C1C;
+    --darkest-gray: #212121;
+}
+
+body {
+    background-color: var(--lighter-gray) !important;
+}
+
+/* Theme button */
+
+.btnContainer {
+    width: 46px;
+    height: 20px;
+    background-color: white;
+    display: flex;
+    position: relative;
+    border-radius: 50px;
+    margin-right: 20px;
+    
+    cursor: pointer;
+    scale: 2;
+
+    box-shadow: inset -2px -2px 10px 0.1px #818181;
+}
+i {
+    color: #111;
+    font-size: 17px;
+    transition: all 300ms ease;
+    font-weight: 100;
+}
+#weather {
+    line-height: 1.2;
+    margin-left: 2px;
+}
+.active {
+    transform: translateX(27px) rotate(350deg);
+    color: #fff;
+}
+.changeBg {
+    background-color: #0f0f0f;
+    box-shadow: inset 2px 2px 10px 0.1px #000000;
+}
+
+#navdiv {
+    background-color: var(--simple-white) !important;
+    box-shadow: 0px 2px 5px 1px #00000034;
+}
+#a-brand {
+    padding: 0 !important;
+}
+.brand-title {
+    font-weight: 700;
+    font-size: 3.2vh;
+    vertical-align: middle;
+}
+#left {
+    color: var(--strong-orange);
+}
+#right {
+    color: var(--middle-gray);
+}

@@ -1,0 +1,35 @@
+Em comum:
+	strongOrange: #FF9C28
+		- left text logo (general)
+		- box title (general)
+		- scroll (50% opacity) (general)
+
+	lightOrange: #FFAE4E
+		- navbar selected item (general)
+		- blockBox (general)
+		- panel Orange colors (general)
+
+	lightierOrange: #FFFAF3
+		- panel background (light)
+
+ 	lightestOrange: #FFFBF9
+		- block background (light)
+
+	White: #FFFFFF
+		- block number (general)
+		- header background (light)
+		- panel box bg (light)
+	
+	midGray: #494949
+		- screen 2, 3 and 4 texts (general)
+		- block info text, season, etc (light)
+		- panel box title bg (light)
+		- panel texts (general)
+
+	middleGray: #404040
+		- text right logo (light)
+		- navbar text (light)
+
+	lighterGray: #F5F5F5
+		- body background (light)
+		- search icon color (light)
