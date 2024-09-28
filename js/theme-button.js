@@ -1,9 +1,9 @@
-const btnContainer = document.getElementsByClassName("btnContainer")[0];
+const btnTheme = document.getElementsByClassName("btnTheme")[0];
 const icon = document.querySelector("#weather")
 
-btnContainer.addEventListener("click", () => {
+btnTheme.addEventListener("click", () => {
     icon.classList.toggle("active");
     icon.classList.toggle("fa-sun")
     icon.classList.toggle("fa-moon");
-    btnContainer.classList.toggle("changeBg");
+    btnTheme.classList.toggle("changeBg");
 });
