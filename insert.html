@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="/imgs/icon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/2ecf3e5de6.js" crossorigin="anonymous"></script>
+    <script src="/js/theme-button.js" async></script>
+    <title>Episode Counter</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="brand-name">
+                <img src="imgs/logo-dark.png" alt="Logo" width="60" height="60" class="brand-logo">
+                <span class="brand-left">EPISODE</span><span class="brand-right">COUNTER</span>
+            </a>
+
+            <ul class="navbar-links">
+                <li>
+                    <a href="index.html">CATALOG</a>
+                </li>
+                <li class="active">
+                    <a href="insert.html">NEW</a>
+                </li>
+                <li>
+                    <a href="/delete">DELETE</a>
+                </li>
+                <li>
+                    <a href="/contact">CONTACT</a>
+                </li>
+            </ul>
+            <div class="menu-button hide-on-desktop">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="menu-overlay hide-on-desktop"></div>
+
+    <main>
+        <section id="content">
+            <div class="content-screen">
+                <div class="content-line-1">
+                    <div class="theme-button-container">
+                        <div class="btn-theme change-bg" id="btn-sun">
+                            <i class="fas fa-moon active-theme" id="theme-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="/js/menu-button.js" async></script>
+</body>
+</html>

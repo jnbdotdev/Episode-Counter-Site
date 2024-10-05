@@ -1,120 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Episode Counter</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="icon" type="image/x-icon" href="/imgs/icon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/2ecf3e5de6.js" crossorigin="anonymous"></script>
+    <script src="/js/theme-button.js" async></script>
+    <script src="/js/script.js" async></script>
+    <title>Episode Counter</title>
 </head>
 <body>
-    <div class="align-content-center">
-        <div id="navdiv" class="position-fixed z-3 w-100 text-center justify-content-center">
-            <nav id="navblock" class="navbar navbar-expand-xl d-inline-block align-middle" role="navigation" aria-label="main navigator">
-                <div class="container-fluid float-start">
-                    <a id="a-brand" class="navbar-brand w-25 text-start" href="#">
-                        <img src="imgs/logo-light.png" alt="Logo" width="65" height="65" class="d-inline-block rounded-circle me-2">
-                        <span class="brand-title" id="left">EPISODE </span><span class="brand-title" id="right">COUNTER</span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-text collapse navbar-collapse ms-5 float-end fw-medium" id="collapsibleNavbar">
-                        <ul class="navbar-nav nav-underline pb-0 fw-normal" id="nav-itens">
-                            <li class="nav-item mx-2 fw-bold fs-4">
-                                <a class="nav-link" aria-current="page" href="#home">CATALOG</a>
-                            </li>
-                            <li class="nav-item mx-2 fw-bold fs-4">
-                                <a class="nav-link" href="newContent.html">NEW</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <section id="catalog">
-        <div class="container w-100">
-            <div class="screen-70 d-block m-auto">
-                <div class="line-one d-block m-auto">
-                    <div class="btnThemeContainer d-inline-block">
-                        <div class="btnContainer mx-2 btn border-1">
-                            <div class="btnTheme" id="btnSun">
-                                <i class="fas fa-sun" id="weather"></i>
-                            </div>
+    <header>
+        <nav>
+            <a href="/" class="brand-name">
+                <img src="imgs/logo-dark.png" alt="Logo" width="60" height="60" class="brand-logo">
+                <span class="brand-left">EPISODE</span><span class="brand-right">COUNTER</span>
+            </a>
+
+            <ul class="navbar-links">
+                <li class="active">
+                    <a href="/">CATALOG</a>
+                </li>
+                <li>
+                    <a href="insert.html">NEW</a>
+                </li>
+                <li>
+                    <a href="/delete">DELETE</a>
+                </li>
+                <li>
+                    <a href="/contact">CONTACT</a>
+                </li>
+            </ul>
+            <div class="menu-button hide-on-desktop">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="menu-overlay hide-on-desktop"></div>
+
+    <main>
+        <section id="content">
+            <div class="content-screen">
+                <div class="content-line-1">
+                    <div class="theme-button-container">
+                        <div class="btn-theme change-bg" id="btn-sun">
+                            <i class="fas fa-moon active-theme" id="theme-icon"></i>
                         </div>
                     </div>
-                    <div class="d-inline-block" id="searchBarContainer">
-                        <input type="text" class="d-inline-block" placeholder="Search..." id="searchBar" name="searchBar">
-                        <button class="btnSearchIcon" id="btnSearchIcon">
+                    <div class="search-bar-container">
+                        <input type="text" name="searchBar" id="searchBar" placeholder="Search content...">
+                        <button class="btnSearch" id="btnSearch" type="button">
                             <i class="fa fa-search" id="searchIcon"></i>
                         </button>
                     </div>
                 </div>
-                <div class="catalogPane w-100">
-                    <div class="block-group-1 d-block mt-4">
-                        <div class="block-number-container d-inline-block">
-                            <span class="block-number">1</span>
+                <div class="content-blocks">
+                    <div class="line-block">
+                        <div class="block-number">1</div>
+                        <div class="block-info">
+                            <div class="info-title">One Piece</div>
+                            <div class="info-detail">SEASON: 13</div>
+                            <div class="info-detail">EPISODE: 1014</div>
                         </div>
-                        <div class="block-info-container d-inline-block">
-                            <div class="block-title-container d-block">
-                                <h1 class="fs-2">One Piece</h1>
+                        <div class="block-buttons">
+                            <div class="button-container">
+                                <button type="button" name="btnMore" id="btnMore" class="btnAction"><img src="imgs/buttons/white/more.png" class="btnActionIcon" alt="more"></button>
                             </div>
-                            <div class="block-season-container d-block">
-                                <h3>SEASON: 13</h3>
+                            <div class="button-container">
+                                <button type="button" name="btnUpdate" id="btnUpdate" class="btnAction"><img src="imgs/buttons/white/update.png" class="btnActionIcon" alt="more"></button>
                             </div>
-                            <div class="block-episode-container d-block">
-                                <h3>EPISODE: 1014</h3>
-                            </div>
-                        </div>
-                        <div class="block-button-group d-inline-block">
-                            <div class="block-button-container d-inline-block">
-                                <button type="button" name="btnMore" id="btnMore" class="btnAction btn rounded-circle d-inline-block"><img src="imgs/buttons/orange/more.png" class="btnActionIcon" alt="more"></button>
-                            </div>
-                            <div class="block-button-container d-inline-block">
-                                <button type="button" name="btnUpdate" id="btnUpdate" class="btnAction btn rounded-circle d-inline-block"><img src="imgs/buttons/orange/update.png" class="btnActionIcon" alt="more"></button>
-                            </div>
-                            <div class="block-button-container d-inline-block">
-                                <button type="button" name="btnDelete" id="btnDelete" class="btnAction btn rounded-circle d-inline-block"><img src="imgs/buttons/orange/delete.png" class="btnActionIcon" alt="more"></button>
+                            <div class="button-container">
+                                <button type="button" name="btnDelete" id="btnDelete" class="btnAction"><img src="imgs/buttons/white/delete.png" class="btnActionIcon" alt="more"></button>
                             </div>
                         </div>
                     </div>
-                    <div class="block-group-1 d-block mt-4">
-                        <div class="block-number-container d-inline-block">
-                            <span class="block-number">2</span>
+                    
+                    <div class="line-block">
+                        <div class="block-number">2</div>
+                        <div class="block-info">
+                            <div class="info-title">Tower of God</div>
+                            <div class="info-detail">SEASON: 2</div>
+                            <div class="info-detail">EPISODE: 11</div>
                         </div>
-                        <div class="block-info-container d-inline-block">
-                            <div class="block-title-container d-block">
-                                <h1 class="fs-2">Tower of God</h1>
+                        <div class="block-buttons">
+                            <div class="button-container">
+                                <button type="button" name="btnMore" id="btnMore" class="btnAction"><img src="imgs/buttons/white/more.png" class="btnActionIcon" alt="more"></button>
                             </div>
-                            <div class="block-season-container d-block">
-                                <h3>SEASON: 2</h3>
+                            <div class="button-container">
+                                <button type="button" name="btnUpdate" id="btnUpdate" class="btnAction"><img src="imgs/buttons/white/update.png" class="btnActionIcon" alt="more"></button>
                             </div>
-                            <div class="block-episode-container d-block">
-                                <h3>EPISODE: 11</h3>
+                            <div class="button-container">
+                                <button type="button" name="btnDelete" id="btnDelete" class="btnAction"><img src="imgs/buttons/white/delete.png" class="btnActionIcon" alt="more"></button>
                             </div>
                         </div>
-                        <div class="block-button-group d-inline-block">
-                            <div class="block-button-container d-inline-block">
-                                <button type="button" name="btnMore" id="btnMore" class="btnAction btn rounded-circle d-inline-block"><img src="imgs/buttons/orange/more.png" class="btnActionIcon" alt="more"></button>
+                    </div>
+
+                    <div class="line-block">
+                        <div class="block-number">3</div>
+                        <div class="block-info">
+                            <div class="info-title">Supernatural</div>
+                            <div class="info-detail">SEASON: 12</div>
+                            <div class="info-detail">EPISODE: 21</div>
+                        </div>
+                        <div class="block-buttons">
+                            <div class="button-container">
+                                <button type="button" name="btnMore" id="btnMore" class="btnAction"><img src="imgs/buttons/white/more.png" class="btnActionIcon" alt="more"></button>
                             </div>
-                            <div class="block-button-container d-inline-block">
-                                <button type="button" name="btnUpdate" id="btnUpdate" class="btnAction btn rounded-circle d-inline-block"><img src="imgs/buttons/orange/update.png" class="btnActionIcon" alt="more"></button>
+                            <div class="button-container">
+                                <button type="button" name="btnUpdate" id="btnUpdate" class="btnAction"><img src="imgs/buttons/white/update.png" class="btnActionIcon" alt="more"></button>
                             </div>
-                            <div class="block-button-container d-inline-block">
-                                <button type="button" name="btnDelete" id="btnDelete" class="btnAction btn rounded-circle d-inline-block"><img src="imgs/buttons/orange/delete.png" class="btnActionIcon" alt="more"></button>
+                            <div class="button-container">
+                                <button type="button" name="btnDelete" id="btnDelete" class="btnAction"><img src="imgs/buttons/white/delete.png" class="btnActionIcon" alt="more"></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--<script src="js/script.js"></script>-->
-    <script src="js/theme-button.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        </section>
+    </main>
+    
+    <script src="/js/menu-button.js" async></script>
 </body>
 </html>
