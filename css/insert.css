@@ -1,0 +1,237 @@
+.square-box {
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 7vh;
+    border-radius: 20px;
+    background-color: var(--mid-dark-gray);
+
+    box-shadow: 0px 2px 3px 1px rgb(24, 24, 24);
+}
+
+.title-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11%;
+}
+.title-box {
+    background-color: var(--strong-orange);
+    width: 32%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0px 0px 15px 15px;
+}
+.title-box h1 {
+    font-size: 1.55vw;
+}
+
+.content-row {
+    width: 100%;
+    padding: 0px 30px;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: space-between;
+}
+.content-column:nth-child(1) {
+    width: 48%;
+    margin-top: 50px;
+    padding: 0px 26px;
+}
+.content-column:nth-child(2) {
+    width: 48%;
+    margin-top: 50px;
+    padding: 0px 12px;
+}
+
+.content-boxes {
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+
+    border-radius: 8px 8px 0px 0px;
+}
+.box-unique {
+    padding: 0px 10px;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.season-box, .episode-box {
+    width: 46%;
+}
+.season-box .subtitle-box .text-box,
+.episode-box .subtitle-box .text-box {
+    width: 50%;
+}
+
+.content-boxes input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid var(--strong-orange);
+    border-radius: 0px 20px 20px 20px;
+    padding: 0px 12px;
+    font-size: 16px;
+    outline: none;
+}
+.content-boxes input::placeholder {
+    color: #d8d8d8;
+}
+.subtitle-box {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.text-box {
+    width: 23%;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    padding: 2px 0px;
+
+    background-color: var(--strong-orange);
+    border-radius: 9px 9px 0px 0px;
+}
+
+.status-box, .category-box {
+    height: fit-content;
+}
+
+.status-box .subtitle-box,
+.category-box .subtitle-box {
+    justify-content: center;
+}
+.status-box .subtitle-box .text-box,
+.category-box .subtitle-box .text-box {
+    background-color: var(--simple-white);
+    color: var(--middle-gray);
+    width: 55%;
+    font-weight: 600;
+}
+
+.releasing-text {
+    width: 100%;
+    background-color: var(--simple-white);
+    color: var(--middle-gray);
+    font-weight: 600;
+}
+.releasing-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: var(--darkest-gray);
+}
+.releasing-option {
+    display: flex;
+    justify-content: center;
+    margin: 0px 18px;
+}
+.releasing-option input[type="checkbox"] {
+    width: 25px;
+    height: 20px;
+    margin: 0px 8px;
+    accent-color: var(--simple-white);
+    color: var(--darkest-gray);
+}
+.releasing-option label {
+    font-weight: 600;
+}
+
+.panel-box {
+    height: fit-content;
+    width: 90%;
+    background-color: var(--darkest-gray);
+    border-radius: 25px;
+    padding: 20px 10px;
+
+    box-shadow: 0px 2px 5px 1px rgb(34, 34, 34);
+}
+.panel-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+    margin: 15px 0px;
+    padding: 0px 10px;
+}
+.panel-line label {
+    font-weight: normal;
+    font-size: 15px;
+}
+.panel-line input {
+    height: 17px;
+    width: 17px;
+    margin-right: 10px;
+    accent-color: var(--darkest-gray);
+}
+
+.button-row {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-box {
+    width: 26%;
+}
+.createButton {
+    background-color: var(--strong-orange);
+    color: #FFF;
+
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 2px 5px 1px rgb(34, 34, 34);
+    font-size: 28px;
+    font-weight: 600;
+
+    display: flex;
+    padding: 10px 3vh;
+    align-items: center;
+    cursor: pointer;
+
+    transition: all 300ms ease;
+}
+.createButton:hover {
+    transform: scale(1.04);
+}
+.createButton i {
+    display: flex;
+    color: #FFF;
+    margin-right: 1.8vw;
+}
+
+
+@media (max-width: 1440px) and (min-width: 960px) and (orientation: landscape) {
+    .content-screen {
+        width: 65%;
+    }
+}
+
+@media (orientation: portrait), (max-width: 960px) {
+    
+    .title-box {
+        width: 33vh;
+    }
+    .title-box h1 {
+        font-size: 3vh;
+    }
+}

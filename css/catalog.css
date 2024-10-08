@@ -1,0 +1,140 @@
+/* SEARCH BAR */
+.search-bar-container {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+#searchBar {
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 18px;
+    height: 50px;
+    width: 380px;
+    border-radius: 40px;
+
+    outline: none;
+    border: 2px solid var(--light-orange);
+}
+#searchBar::placeholder {
+    color: #d8d8d8;
+}
+#btnSearch {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+#searchIcon {
+    font-size: 18px !important;
+    color: var(--light-orange);
+
+    transition: all 200ms ease;
+}
+#searchIcon:hover {
+    transform: scale(1.15);
+}
+
+/* CONTENT BLOCKS */
+.content-blocks {
+    display: block;
+    width: 100%;
+}
+.line-block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 130px;
+    margin-top: 30px;
+
+    border-radius: 30px;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 40%);
+
+    background-color: var(--darker-gray);
+
+    transition: all 200ms ease;
+}
+.line-block:hover {
+    transform: scale(1.02);
+}
+.block-number {
+    width: 12.6%;
+    height: 100%;
+    border-radius: 30px 0px 0px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+    font-weight: 600;
+    background-color: var(--light-orange);
+}
+.block-info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    margin-left: 10px;
+}
+.info-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--light-orange);
+}
+.info-detail {
+    margin-top: 5px;
+    font-weight: 600;
+}
+.block-buttons {
+    width: 30%;
+    height: 100%;
+    margin-right: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+.btnAction {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+
+    background-color: var(--light-orange);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 40%);
+    border: none;
+    cursor: pointer;
+
+    transition: all 300ms ease;
+}
+.btnAction:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 0px 5px 2px rgb(136, 77, 0);
+}
+
+.btnActionIcon {
+    width: 40px;
+    height: 40px;
+}
+.not-founded {
+    display: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+    font-size: 25px;
+}

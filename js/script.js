@@ -33,12 +33,16 @@ async function getAPI() {
           <div class="info-detail">EPISODE: ${catalogArray[content]['episode']}</div>\n
         </div>\n
         <div class="block-buttons">\n
-          <div class="button-container">\n
-            <button type="button" name="btnMore" id="btnMore" class="btnAction"><img src="imgs/buttons/white/more.png" class="btnActionIcon" alt="more"></button>\n
-          </div>\n
-          <div class="button-container">\n
-            <button type="button" name="btnUpdate" id="btnUpdate" class="btnAction"><img src="imgs/buttons/white/update.png" class="btnActionIcon" alt="more"></button>\n
-          </div>\n
+          <a href="details.html">\n
+            <div class="button-container">\n
+              <button type="button" name="btnMore" id="btnMore" class="btnAction"><img src="imgs/buttons/white/more.png" class="btnActionIcon" alt="more"></button>\n
+            </div>\n
+          </a>\n
+          <a href="update.html">\n
+            <div class="button-container">\n
+              <button type="button" name="btnUpdate" id="btnUpdate" class="btnAction"><img src="imgs/buttons/white/update.png" class="btnActionIcon" alt="more"></button>\n
+            </div>\n
+          </a>\n
           <div class="button-container">\n
             <button type="button" name="btnDelete" id="btnDelete" class="btnAction"><img src="imgs/buttons/white/delete.png" class="btnActionIcon" alt="more"></button>\n
           </div>\n

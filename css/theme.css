@@ -1,0 +1,17 @@
+:root {
+    --strong-orange: #FF9C28;
+    --light-orange: #FFAE4E;
+    --lightier-orange: #FFFAF3;
+    --lightest-orange: #FFFBF9;
+    
+    --simple-white: #FFF;
+
+    --lighter-gray: #F5F5F5;
+    --middle-gray: #404040;
+    --mid-gray: #494949;
+    --mid-dark-gray: #2E2E2E;
+    --dark-gray: #252525;
+    --darker-gray: #1C1C1C;
+    --darkest-gray: #212121;
+}
+
