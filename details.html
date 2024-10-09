@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="imgs/icon.ico">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/insert.css">
+    <link rel="stylesheet" href="css/data-screen.css">
     
     <script src="https://kit.fontawesome.com/2ecf3e5de6.js" crossorigin="anonymous"></script>
     <script src="js/theme-button.js" async></script>
@@ -31,7 +31,7 @@
                     <a href="insert.html">NEW</a>
                 </li>
                 <li>
-                    <a href="/contact">CONTACT</a>
+                    <a href="https://www.linkedin.com/in/jameshenriquesp/" target="_blank">CONTACT</a>
                 </li>
             </ul>
             <div class="menu-button hide-on-desktop">
@@ -67,27 +67,27 @@
                                 <div class="subtitle-box">
                                     <div class="text-box">Name</div>
                                 </div>
-                                <input type="text" name="content" id="content" placeholder="Insert content name...">
+                                <input type="text" name="content" id="content" placeholder="Insert content name..."  disabled>
                             </div>
                             <div class="info-row">
                                 <div class="content-boxes season-box">
                                     <div class="subtitle-box">
                                         <div class="text-box">Season</div>
                                     </div>
-                                    <input type="text" name="season" id="season" placeholder="Insert season...">
+                                    <input type="text" name="season" id="season" placeholder="Insert season..." disabled>
                                 </div>
                                 <div class="content-boxes episode-box">
                                     <div class="subtitle-box">
                                         <div class="text-box">Episode</div>
                                     </div>
-                                    <input type="text" name="episode" id="episode" placeholder="Insert episode...">
+                                    <input type="text" name="episode" id="episode" placeholder="Insert episode..." disabled>
                                 </div>
                             </div>
                             <div class="content-boxes platform-box">
                                 <div class="subtitle-box">
                                     <div class="text-box">Platform</div>
                                 </div>
-                                <input type="text" name="platform" id="platform" placeholder="Insert platform...">
+                                <input type="text" name="platform" id="platform" placeholder="Insert platform..." disabled>
                             </div>
                         </div>
 
@@ -97,25 +97,9 @@
                                     <div class="subtitle-box">
                                         <div class="text-box">Status</div>
                                     </div>
-                                    <div class="panel-box">
-                                        <div class="panel-line">
-                                            <input type="radio" name="status" id="ptw">
-                                            <label for="ptw">Plan to watch</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="status" id="watching">
-                                            <label for="watching">Watching</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="status" id="watched">
-                                            <label for="watched">Watched</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="status" id="dropped">
-                                            <label for="dropped">Dropped</label>
+                                    <div class="panel-box box-details">
+                                        <div class="panel-line line-details">
+                                            <h2>Plan to watch</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -123,25 +107,9 @@
                                     <div class="subtitle-box">
                                         <div class="text-box">Category</div>
                                     </div>
-                                    <div class="panel-box">
-                                        <div class="panel-line">
-                                            <input type="radio" name="category" id="anime">
-                                            <label for="anime">Anime</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="category" id="series">
-                                            <label for="series">Series</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="category" id="movie">
-                                            <label for="movie">Movie</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="category" id="manga">
-                                            <label for="manga">Manga/Book</label>
+                                    <div class="panel-box box-details">
+                                        <div class="panel-line line-details">
+                                            <h2>Anime</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -156,12 +124,22 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="content-boxes box-unique">
+                                <div class="subtitle-box">
+                                    <div class="text-box releasing-text">Release Day</div>
+                                </div>
+                                <div class="releasing-box">
+                                    <div class="releasing-option">
+                                        <h2>DAY</h2>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="button-row">
                         <div class="button-box">
-                            <button type="button" class="createButton"><i class="fa-solid fa-check"></i>OK</button>
+                            <a href="index.html"><button type="button" class="confirmButton"><i class="fa-solid fa-check"></i><span>CONFIRM</span></button></a>
                         </div>
                     </div>
 
