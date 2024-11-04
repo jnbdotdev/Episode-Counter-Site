@@ -25,7 +25,7 @@ async function getAPI() {
     for (let content in catalogArray) {
       let id = parseInt(content)+1;
       contentBlocks.innerHTML += 
-     `<div class="line-block">\n
+     `<div class="line-block" id="${catalogArray[content]['cod']}">\n
         <div class="block-number">${id}</div>\n
         <div class="block-info">\n
           <div class="info-title">${catalogArray[content]['name']}</div>\n
@@ -44,7 +44,7 @@ async function getAPI() {
             </div>\n
           </a>\n
           <div class="button-container">\n
-            <button type="button" name="btnDelete" id="btnDelete" class="btnAction"><img src="imgs/buttons/white/delete.png" class="btnActionIcon" alt="more"></button>\n
+            <button type="button" name="btnDelete" id="btnDelete" class="btnAction" onclick="deleteContent()"><img src="imgs/buttons/white/delete.png" class="btnActionIcon" alt="more"></button>\n
           </div>\n
         </div>\n
       </div>`

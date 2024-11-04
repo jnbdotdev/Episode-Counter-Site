@@ -1,6 +1,6 @@
 .square-box {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     padding-bottom: 7vh;
     border-radius: 20px;
     background-color: var(--mid-dark-gray);
@@ -244,7 +244,12 @@
     text-align: center;
     margin-left: 1vw;
 }
-
+span.show-day {
+    padding: 6px 16px;
+    width: 100%;
+    text-align: right;
+    color: #A7A7A7;
+}
 
 @media (max-width: 1440px) and (min-width: 960px) and (orientation: landscape) {
     .content-screen {

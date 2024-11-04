@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/data-screen.css">
     
     <script src="https://kit.fontawesome.com/2ecf3e5de6.js" crossorigin="anonymous"></script>
-    <script src="js/theme-button.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/buttons/theme-button.js" async></script>
     
     <title>Episode Counter</title>
 </head>
@@ -60,121 +61,126 @@
                             <h1>UPDATE CONTENT</h1>
                         </div>
                     </div>
-                    
-                    <div class="content-row">
-                        <div class="content-column">
-                            <div class="content-boxes">
-                                <div class="subtitle-box">
-                                    <div class="text-box">Name</div>
-                                </div>
-                                <input type="text" name="content" id="content" placeholder="Insert content name...">
-                            </div>
-                            <div class="info-row">
-                                <div class="content-boxes season-box">
+
+                    <form class="update-form">
+                        <div class="content-row">
+                            <div class="content-column">
+                                <div class="content-boxes">
                                     <div class="subtitle-box">
-                                        <div class="text-box">Season</div>
+                                        <div class="text-box">Name</div>
                                     </div>
-                                    <input type="text" name="season" id="season" placeholder="Insert season...">
+                                    <input type="text" name="updateName" id="updateContentName" placeholder="Insert content name...">
                                 </div>
-                                <div class="content-boxes episode-box">
-                                    <div class="subtitle-box">
-                                        <div class="text-box">Episode</div>
+                                <div class="info-row">
+                                    <div class="content-boxes season-box">
+                                        <div class="subtitle-box">
+                                            <div class="text-box">Season</div>
+                                        </div>
+                                        <input type="text" name="updateSeason" id="updateContentSeason" placeholder="Insert season...">
                                     </div>
-                                    <input type="text" name="episode" id="episode" placeholder="Insert episode...">
+                                    <div class="content-boxes episode-box">
+                                        <div class="subtitle-box">
+                                            <div class="text-box">Episode</div>
+                                        </div>
+                                        <input type="text" name="updateEpisode" id="updateContentEpisode" placeholder="Insert episode...">
+                                    </div>
+                                </div>
+                                <div class="content-boxes platform-box">
+                                    <div class="subtitle-box">
+                                        <div class="text-box">Platform</div>
+                                    </div>
+                                    <input type="text" name="updatePlatform" id="updateContentPlatform" placeholder="Insert platform...">
                                 </div>
                             </div>
-                            <div class="content-boxes platform-box">
-                                <div class="subtitle-box">
-                                    <div class="text-box">Platform</div>
+
+                            <div class="content-column">
+                                <div class="info-row">
+                                    <div class="content-boxes status-box">
+                                        <div class="subtitle-box">
+                                            <div class="text-box">Status</div>
+                                        </div>
+                                        <div class="panel-box">
+                                            <div class="panel-line">
+                                                <input type="radio" name="status" id="updateContentPtw">
+                                                <label for="updateContentPtw">Plan to watch</label>
+                                            </div>
+
+                                            <div class="panel-line">
+                                                <input type="radio" name="status" id="updateContentWatching">
+                                                <label for="updateContentWatching">Watching</label>
+                                            </div>
+
+                                            <div class="panel-line">
+                                                <input type="radio" name="status" id="updateContentWatched">
+                                                <label for="updateContentWatched">Watched</label>
+                                            </div>
+
+                                            <div class="panel-line">
+                                                <input type="radio" name="status" id="updateContentDropped">
+                                                <label for="updateContentDropped">Dropped</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-boxes category-box">
+                                        <div class="subtitle-box">
+                                            <div class="text-box">Category</div>
+                                        </div>
+                                        <div class="panel-box">
+                                            <div class="panel-line">
+                                                <input type="radio" name="category" id="updateContentCategoryAnime">
+                                                <label for="updateContentCategoryAnime">Anime</label>
+                                            </div>
+
+                                            <div class="panel-line">
+                                                <input type="radio" name="category" id="updateContentCategorySeries">
+                                                <label for="updateContentCategorySeries">Series</label>
+                                            </div>
+
+                                            <div class="panel-line">
+                                                <input type="radio" name="category" id="updateContentCategoryMovie">
+                                                <label for="updateContentCategoryMovie">Movie</label>
+                                            </div>
+
+                                            <div class="panel-line">
+                                                <input type="radio" name="category" id="updateContentCategoryManga">
+                                                <label for="updateContentCategoryManga">Manga/Book</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <input type="text" name="platform" id="platform" placeholder="Insert platform...">
+                                <div class="content-boxes box-unique">
+                                    <div class="subtitle-box">
+                                        <div class="text-box releasing-text">Is the content currently being released?</div>
+                                    </div>
+                                    <div class="releasing-box">
+                                        <div class="releasing-option">
+                                            <input type="checkbox" name="releasing" id="updateContentYes">
+                                            <label for="updateContentYes">YES</label>
+                                        </div>
+                                        <div class="releasing-option">
+                                            <input type="checkbox" name="releasing" id="updateContentNo">
+                                            <label for="updateContentNo">NO</label>
+                                        </div>
+                                    </div>
+
+                                    <span class="show-day"></span>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="content-column">
-                            <div class="info-row">
-                                <div class="content-boxes status-box">
-                                    <div class="subtitle-box">
-                                        <div class="text-box">Status</div>
-                                    </div>
-                                    <div class="panel-box">
-                                        <div class="panel-line">
-                                            <input type="radio" name="status" id="ptw">
-                                            <label for="ptw">Plan to watch</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="status" id="watching">
-                                            <label for="watching">Watching</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="status" id="watched">
-                                            <label for="watched">Watched</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="status" id="dropped">
-                                            <label for="dropped">Dropped</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content-boxes category-box">
-                                    <div class="subtitle-box">
-                                        <div class="text-box">Category</div>
-                                    </div>
-                                    <div class="panel-box">
-                                        <div class="panel-line">
-                                            <input type="radio" name="category" id="anime">
-                                            <label for="anime">Anime</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="category" id="series">
-                                            <label for="series">Series</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="category" id="movie">
-                                            <label for="movie">Movie</label>
-                                        </div>
-
-                                        <div class="panel-line">
-                                            <input type="radio" name="category" id="manga">
-                                            <label for="manga">Manga/Book</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content-boxes box-unique">
-                                <div class="subtitle-box">
-                                    <div class="text-box releasing-text">Is the content currently being released?</div>
-                                </div>
-                                <div class="releasing-box">
-                                    <div class="releasing-option">
-                                        <input type="checkbox" name="releasing" id="yes">
-                                        <label for="releasing">YES</label>
-                                    </div>
-                                    <div class="releasing-option">
-                                        <input type="checkbox" name="releasing" id="no">
-                                        <label for="releasing">NO</label>
-                                    </div>
-                                </div>
+                        
+                        <div class="button-row">
+                            <div class="button-box">
+                                <button type="submit" class="confirmButton"><i class="fa-solid fa-rotate"></i><span>UPDATE</span></button>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="button-row">
-                        <div class="button-box">
-                            <button type="button" class="confirmButton"><i class="fa-solid fa-rotate"></i><span>UPDATE</span></button>
-                        </div>
-                    </div>
+                    </form>
 
                 </div>
             </div>
         </section>
     </main>
     
-    <script src="js/menu-button.js" async></script>
+    <script src="js/buttons/menu-button.js" async></script>
+    <script src="js/api/update.js" async></script>
 </body>
 </html>

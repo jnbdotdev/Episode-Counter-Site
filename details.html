@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/data-screen.css">
+    <link rel="stylesheet" href="css/details.css">
     
     <script src="https://kit.fontawesome.com/2ecf3e5de6.js" crossorigin="anonymous"></script>
-    <script src="js/theme-button.js" async></script>
+    <script src="js/buttons/theme-button.js" async></script>
     
     <title>Episode Counter</title>
 </head>
@@ -60,94 +61,95 @@
                             <h1>DETAILS</h1>
                         </div>
                     </div>
-                    
-                    <div class="content-row">
-                        <div class="content-column">
-                            <div class="content-boxes">
-                                <div class="subtitle-box">
-                                    <div class="text-box">Name</div>
-                                </div>
-                                <input type="text" name="content" id="content" placeholder="Insert content name..."  disabled>
-                            </div>
-                            <div class="info-row">
-                                <div class="content-boxes season-box">
+                    <form class="details-form">
+                        <div class="content-row">
+                            <div class="content-column">
+                                <div class="content-boxes">
                                     <div class="subtitle-box">
-                                        <div class="text-box">Season</div>
+                                        <div class="text-box">Name</div>
                                     </div>
-                                    <input type="text" name="season" id="season" placeholder="Insert season..." disabled>
+                                    <input type="text" name="content" id="contentName" placeholder="Insert content name..."  disabled>
                                 </div>
-                                <div class="content-boxes episode-box">
+                                <div class="info-row">
+                                    <div class="content-boxes season-box">
+                                        <div class="subtitle-box">
+                                            <div class="text-box">Season</div>
+                                        </div>
+                                        <input type="text" name="season" id="season" placeholder="Insert season..." disabled>
+                                    </div>
+                                    <div class="content-boxes episode-box">
+                                        <div class="subtitle-box">
+                                            <div class="text-box">Episode</div>
+                                        </div>
+                                        <input type="text" name="episode" id="episode" placeholder="Insert episode..." disabled>
+                                    </div>
+                                </div>
+                                <div class="content-boxes platform-box">
                                     <div class="subtitle-box">
-                                        <div class="text-box">Episode</div>
+                                        <div class="text-box">Platform</div>
                                     </div>
-                                    <input type="text" name="episode" id="episode" placeholder="Insert episode..." disabled>
+                                    <input type="text" name="platform" id="platform" placeholder="Insert platform..." disabled>
                                 </div>
                             </div>
-                            <div class="content-boxes platform-box">
-                                <div class="subtitle-box">
-                                    <div class="text-box">Platform</div>
-                                </div>
-                                <input type="text" name="platform" id="platform" placeholder="Insert platform..." disabled>
-                            </div>
-                        </div>
 
-                        <div class="content-column">
-                            <div class="info-row">
-                                <div class="content-boxes status-box">
-                                    <div class="subtitle-box">
-                                        <div class="text-box">Status</div>
+                            <div class="content-column">
+                                <div class="info-row">
+                                    <div class="content-boxes status-box">
+                                        <div class="subtitle-box">
+                                            <div class="text-box">Status</div>
+                                        </div>
+                                        <div class="panel-box box-details">
+                                            <div class="panel-line line-details">
+                                                <h2 class="status">Plan to watch</h2>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="panel-box box-details">
-                                        <div class="panel-line line-details">
-                                            <h2>Plan to watch</h2>
+                                    <div class="content-boxes category-box">
+                                        <div class="subtitle-box">
+                                            <div class="text-box">Category</div>
+                                        </div>
+                                        <div class="panel-box box-details">
+                                            <div class="panel-line line-details">
+                                                <h2 class="category">Anime</h2>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content-boxes category-box">
+                                <div class="content-boxes box-unique">
                                     <div class="subtitle-box">
-                                        <div class="text-box">Category</div>
+                                        <div class="text-box releasing-text">Is the content currently being released?</div>
                                     </div>
-                                    <div class="panel-box box-details">
-                                        <div class="panel-line line-details">
-                                            <h2>Anime</h2>
+                                    <div class="releasing-box">
+                                        <div class="releasing-option">
+                                            <h2 class="releasing">OPTION</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-boxes box-unique">
+                                    <div class="subtitle-box">
+                                        <div class="text-box releasing-text">Release Day</div>
+                                    </div>
+                                    <div class="releasing-box">
+                                        <div class="releasing-option">
+                                            <h2 class="releaseday">DAY</h2>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-boxes box-unique">
-                                <div class="subtitle-box">
-                                    <div class="text-box releasing-text">Is the content currently being released?</div>
-                                </div>
-                                <div class="releasing-box">
-                                    <div class="releasing-option">
-                                        <h2>OPTION</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content-boxes box-unique">
-                                <div class="subtitle-box">
-                                    <div class="text-box releasing-text">Release Day</div>
-                                </div>
-                                <div class="releasing-box">
-                                    <div class="releasing-option">
-                                        <h2>DAY</h2>
-                                    </div>
-                                </div>
+                        </div>
+
+                        <div class="button-row">
+                            <div class="button-box">
+                                <a href="index.html"><button type="button" class="confirmButton"><i class="fa-solid fa-check"></i><span>CONFIRM</span></button></a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="button-row">
-                        <div class="button-box">
-                            <a href="index.html"><button type="button" class="confirmButton"><i class="fa-solid fa-check"></i><span>CONFIRM</span></button></a>
-                        </div>
-                    </div>
-
+                    </form>
                 </div>
             </div>
         </section>
     </main>
     
-    <script src="js/menu-button.js" async></script>
+    <script src="js/buttons/menu-button.js" async></script>
+    <script src="js/api/details.js" async></script>
 </body>
 </html>

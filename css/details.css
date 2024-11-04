@@ -1,0 +1,4 @@
+.content-boxes input {
+    background-color: var(--dark-gray);
+    color: white;
+}

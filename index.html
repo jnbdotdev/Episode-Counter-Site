@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/catalog.css">
+    
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/2ecf3e5de6.js" crossorigin="anonymous"></script>
-    <script src="js/theme-button.js" async></script>
-    <script src="js/script.js" async></script>
     <title>Episode Counter</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
                 <img src="imgs/logo-dark.png" alt="Logo" width="60" height="60" class="brand-logo">
                 <span class="brand-left">EPISODE</span><span class="brand-right">COUNTER</span>
             </a>
-
+            
             <ul class="navbar-links">
                 <li class="active">
                     <a href="/">CATALOG</a>
@@ -42,7 +42,7 @@
         </nav>
     </header>
     <div class="menu-overlay hide-on-desktop"></div>
-
+    
     <main>
         <section id="content">
             <div class="content-screen">
@@ -65,8 +65,13 @@
             </div>
         </section>
     </main>
+    
+    <script src="js/script.js" async></script>
+    <script src="js/buttons/menu-button.js" async></script>
+    <script src="js/buttons/theme-button.js" async></script>
+    <script src="js/api/delete.js" async></script>
 
-    <script src="js/menu-button.js" async></script>
     <script src="js/search.js"></script>
+    <script type="module" src="js/buttons/action-button.js"></script>
 </body>
 </html>
